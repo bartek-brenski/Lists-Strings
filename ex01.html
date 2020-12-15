@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex01</title>
+    <script>
+        function findLargestNumberInArray(arr) {
+            let largestNumber = arr[0];
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > largestNumber) {
+                    largestNumber = arr[i];
+                }
+            }
+            return largestNumber;
+        }
+        console.log(findLargestNumberInArray([15,50,23,70,56]));
+        console.log(findLargestNumberInArray([-20,-15,50,23,-70,56,90,-43]));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
