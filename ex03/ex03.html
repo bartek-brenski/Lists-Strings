@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>ex03</title>
+    <script>
+        let n = prompt('write number that you want to check ')
+        function checkIfArgumentIsInArray(arr) {
+            for (let i = 0; i < arr.length; i++) {
+               if (arr[i] === parseInt(n)) {
+                  return true;
+               }
+            }
+            return false;
+        }
+        console.log(checkIfArgumentIsInArray([12,5,23,5,2,4,98,53,9,56,7,32,]));
+    </script>
 </head>
 <body>
-$END$
+
 </body>
 </html>
