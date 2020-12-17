@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex02</title>
+    <script>
+        function reverseList(arr){
+            for (let i = 0; i < arr.length/2; i++) {
+            // let num = arr[i];
+            // let index = arr.length - 1-i;
+            // arr[i] = index;
+            // arr[index] = num;
+                let num = arr[i];
+                let num2 = arr[arr.length - 1 - i];
+                arr[arr.length - 1 - i] = num;
+                arr[i] = num2;
+            }
+            return arr;
+        }
+        console.log(reverseList([5,12,5,2,6,7,9,0,4,2,12]));
+        console.log(reverseList([1,4,6,2,4,5]));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
