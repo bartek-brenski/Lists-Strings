@@ -6,14 +6,14 @@
     <script>
         function reverseList(arr){
             for (let i = 0; i < arr.length/2; i++) {
-            // let num = arr[i];
-            // let index = arr.length - 1-i;
-            // arr[i] = index;
-            // arr[index] = num;
-                let num = arr[i];
-                let num2 = arr[arr.length - 1 - i];
-                arr[arr.length - 1 - i] = num;
-                arr[i] = num2;
+            let num = arr[i];
+            let index = arr.length - 1-i;
+            arr[i] = arr[index];
+            arr[index] = num;
+            //     let num = arr[i];
+            //     let num2 = arr[arr.length - 1 - i];
+            //     arr[arr.length - 1 - i] = num;
+            //     arr[i] = num2;
             }
             return arr;
         }
